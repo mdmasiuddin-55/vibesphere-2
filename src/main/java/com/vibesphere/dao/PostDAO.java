@@ -7,11 +7,12 @@ import java.util.Optional;
 public interface PostDAO {
     Post save(Post post);
     Optional<Post> findById(Long id);
-    List<Post> findByUserId(Long userId);
     List<Post> findAll();
-    List<Post> findFeedPosts(Long userId); // posts from users that the current user follows
-    void update(Post post);
-    void delete(Long id);
+    List<Post> findByUserId(Long userId);
+    List<Post> findFeedPosts(Long userId);
+    boolean addLike(Long postId, Long userId);
+    boolean removeLike(Long postId, Long userId);
+    boolean addComment(Long postId, Long userId, String commentText);
     int getLikeCount(Long postId);
     int getCommentCount(Long postId);
     boolean isLikedByUser(Long postId, Long userId);

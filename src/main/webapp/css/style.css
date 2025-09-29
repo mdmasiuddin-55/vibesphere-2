@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #262626;
+}
+
+.container {
+    max-width: 600px;
+    margin: 80px auto 20px;
+    padding: 0 20px;
+}
+
+.create-post {
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.create-post textarea,
+.create-post input,
+.create-post select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.create-post button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post {
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-media img,
+.post-media video {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.post-actions {
+    padding: 10px 15px;
+}
+
+.like-btn, .comment-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.like-btn.liked {
+    color: #ed4956;
+}
+
+.post-caption {
+    padding: 0 15px 10px;
+}
+
+.post-comments {
+    padding: 15px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.comment {
+    margin-bottom: 8px;
+}
+
+.comment-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.comment-form button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.login-form {
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    width: 350px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #262626;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-form p {
+    margin-top: 20px;
+    color: #262626;
+}
+
+.login-form a {
+    color: #0095f6;
+    text-decoration: none;
+}
